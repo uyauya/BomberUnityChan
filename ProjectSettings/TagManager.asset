@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Explosion
   - Block
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - 
   - Level
-  - 
-  - 
+  - Player
+  - Enemy
   - 
   - 
   - 
