@@ -76,8 +76,8 @@ public class PlayerLevel : MonoBehaviour
 				if (Param.PlayerNo == DataManager.PlayerNo) {
 					DataManager.Level = Param.Level;
 					DataManager.AttackPoint = Param.AttackPoint;
-					DataManager.BoostPointMax = Param.boostPointMax;
-					DataManager.ArmorPointMax = Param.armorPointMax;
+					DataManager.MpMax = Param.MagicPointMax;
+					DataManager.HpMax = Param.HitPointMax;
 					//（プレイヤーの）muzzleにレベルアップ用エフェクト設置
 					LevelUpObject = Instantiate (LevelUpPrefab, muzzle.position, Quaternion.identity);
 					if (PlayerNo == 0) {
@@ -103,8 +103,8 @@ public class PlayerLevel : MonoBehaviour
 	public void LevelInitialize(int level) {
 		DataManager.Level = 1;
 		DataManager.AttackPoint = userParamList[0].AttackPoint;
-		DataManager.BoostPointMax = userParamList[0].boostPointMax;
-		DataManager.ArmorPointMax = userParamList[0].armorPointMax;
+		DataManager.MpMax = userParamList[0].MagicPointMax;
+		DataManager.HpMax = userParamList[0].HitPointMax;
 		}
 
 	public static UserParam SearchParam(int PlayerNo, int Level) {

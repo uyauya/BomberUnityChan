@@ -12,8 +12,8 @@ public class UserData {
 	public bool Continue = false;
 	public int Level;
 	public int AttackPoint;
-	public float BoostPointMax;
-	public float ArmorPointMax;
+	public float MPMax;
+	public float HPMax;
 	public int Score;
 	public string SceneName;
 	public int ClearScene;
